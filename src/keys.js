@@ -1,9 +1,9 @@
 module.exports={
     database: {
-        host:'localhost',
-        user:'root',
-        password:'comida951',
-        database: 'databases_links'
+        host:'bmxqrqvyvpxagrtaws1a-mysql.services.clever-cloud.com',
+        user:'unbj52ien0ey7hnh',
+        password:'r4QqQkARZIKt60x3VZbm',
+        database: 'bmxqrqvyvpxagrtaws1a'
     }
 
 }
