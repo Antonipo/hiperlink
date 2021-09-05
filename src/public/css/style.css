@@ -1,0 +1,36 @@
+body{
+    background: #f5f6f5;
+    /*font-family: 'Oswald', sans-serif;
+    overflow: hidden;*/
+}
+
+.masthead{
+    color: white;
+    min-height: 60rem;
+    width: 100%;
+    height:100%;
+    padding-top: 10rem;
+    background: url('/img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+}
+
+.masthead h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    -webkit-text-stroke: 2px black;
+
+}
+.masthead h3{
+    color: black;
+
+}
+
+@media (min-width:992 px) {
+    .masthead h1{
+        font-size: 5.5rem;
+    }
+}
