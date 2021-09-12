@@ -17,35 +17,34 @@
                 </div>
         </div>
         
-        {{else}}
-            <div class="col-md-4 mx-auto">
-                <div class="card card-body text-center">
-                    <p>There are nor links saved / No contiene links</p>
-                    <a href="/links/add">Create one! | Crea uno !</a>
-                </div>
-            </div>  
+        
+            
         {{/each}}
 
         {{#each grupos}}
         <div class="col-md-3">
                 <div class="card mb-3 text-center" >
                     <div class="card-body border-dark">
+                        <h3>
+                            <small class="text-muted">group :</small>
+                        </h3>
                         <a href="/links/group/{{id_table}}" >
                             <h3 class="card-title text-uppercase">
                                 {{title_table}}
                             </h3>
                         </a>
-                        <a href="/links/delete/{{id}}" class="btn btn-danger">delete Link</a>
-                        <a href="/links/edit/{{id}}" class="btn btn-secondary">Edit</a>
+                        <a href="/links/delete-group/{{id_table}}" class="btn btn-danger">delete group</a>
+                        <a href="/links/edit-group/{{id_table}}" class="btn btn-secondary">Edit group</a>
                     </div>
                 </div>
         </div>
-        {{/each}}
+        {{else }}
         <div class="col-md-4 mx-auto">
                 <div class="card card-body text-center">
                     <p>create a group !</p>
-                    <a href="#">Create one! </a>
+                    <a href="/links/add-group">Create one! </a>
                 </div>
         </div>  
+        {{/each}}
     </div>
 </div>

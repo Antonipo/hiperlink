@@ -1,0 +1,20 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card ">
+                <div class="card-body">
+                    <form action="/links/edit-group/{{datos.id_table}}" method="POST">
+                        <div class="mb-3">
+                            <input type="text" value="{{datos.title_table}}" class="form-control" name="title_table" placeholder="Title" autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-success btn-block">
+                                save
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
