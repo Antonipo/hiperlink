@@ -92,7 +92,8 @@ router.get('/group/:id',isLoggedIn,async(req,res)=>{
 });
 router.get('/delete-group/:id_table',isLoggedIn,async(req,res)=>{
     const {id_table} = req.params;
-    await pool.query('DELETE FROM links WHERE id_table = ?',[id_table]);
+    
+    await pool.query('DELETE FROM links WHERE table_id = ?',[id_table]);
     await pool.query('DELETE FROM grupo WHERE id_table = ?',[id_table]);
     req.flash('success','group deleted successfuly');
     res.redirect('/links');
